@@ -24,5 +24,5 @@ resource "aws_s3_bucket" "hello_terraform_s3_bucket" {
 
 // output
 output "aws_public_ip" {
-    value = hello_terraform_s3_bucket.bucket_domain_name
+    value = aws_s3_bucket.hello_terraform_s3_bucket.bucket_domain_name
 }
